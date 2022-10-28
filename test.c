@@ -1,12 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-	float R=0;
-	float V = 0;
-	scanf( "%f", &R);
-	V = R*R*R*3.14/3*4;
-	printf("V=%f\n",V);
+	int day, a;
+	scanf("%d", &day);
+	a = day % 5;
+	if (1 <= a && a <= 3)
+		printf("Fishing in day %d", day);
+	else printf("Drying in day %d", day);
 	return 0;
 }
